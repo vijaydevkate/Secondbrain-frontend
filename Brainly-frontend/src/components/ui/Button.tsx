@@ -1,10 +1,11 @@
+import type { ReactElement } from "react";
 interface Buttonprops {
     variant: "primary" | "secondary"
     size: "sm" | "mg" | "lg"
     text: string
-    onClick: () => void
-    startIcon: any
-    endIcon: any
+    onClick: () => void;
+    startIcon?: ReactElement;
+    endIcon?: ReactElement;
 
 }
 
