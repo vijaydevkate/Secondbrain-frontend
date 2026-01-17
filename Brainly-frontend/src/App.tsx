@@ -1,4 +1,5 @@
 import './App.css'
+import { PlusIcon } from './components/icons/Plusicon'
 import { Button } from './components/ui/Button'
 
 function App() {
@@ -6,9 +7,11 @@ function App() {
 
   return (
     <>
-    <Button variant='primary' text= "Share"></Button>
-    <Button variant='secondary' text="Add content"></Button>
-      
+    <Button variant='primary' text= "Share" size='sm' startIcon = {<PlusIcon/>} /> 
+    <Button variant='secondary' text="Add content" size='md' />
+    <Button variant='secondary' text="Delete content" size="lg" />
+
+
     </>
   )
 }
