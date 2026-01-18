@@ -23,11 +23,9 @@ const sizeStyles = {
     lg: "py-2 px-2"
 }
 
-
-
 export const Button = ( props: Buttonprops) => {
     return <button className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]}`}>
-       {props.startIcon}
+       {props.startIcon ? <div className="pr-2">{props.startIcon}</div> : null }
         {props.text}
         </button>
 }

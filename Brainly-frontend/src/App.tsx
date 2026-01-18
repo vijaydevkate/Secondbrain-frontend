@@ -7,9 +7,8 @@ function App() {
 
   return (
     <>
-    <Button variant='primary' text= "Share" size='sm' startIcon = {<PlusIcon/>} /> 
-    <Button variant='secondary' text="Add content" size='md' />
-    <Button variant='secondary' text="Delete content" size="lg" />
+    <Button variant='primary' text= "Share" size='sm' startIcon = {<PlusIcon size="lg"/>} /> 
+  
 
 
     </>
